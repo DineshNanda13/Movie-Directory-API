@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MovieDetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/movieImageIdDets"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/movieTitleIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/movieImageIdDets"
+                android:paddingLeft="5dp"
+                android:text="Movie Title"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movieReleaseIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieTitleIdDets"
+                android:layout_toRightOf="@id/movieImageIdDets"
+                android:padding="5dp"
+                android:text="Release Date:" />
+
+
+            <TextView
+                android:id="@+id/movieRatingIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieReleaseIdDets"
+                android:layout_toRightOf="@id/movieImageIdDets"
+                android:paddingLeft="5dp"
+                android:text="Rating:" />
+
+            <TextView
+                android:id="@+id/runtimeIdDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/movieRatingIdDets"
+                android:layout_toRightOf="@id/movieImageIdDets"
+                android:paddingLeft="5dp"
+                android:text="Runtime:" />
+
+            <TextView
+                android:id="@+id/directedByIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieImageIdDets"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Directed by:" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardViewDets">
+
+        <RelativeLayout
+            android:id="@+id/relativeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/cardview_light_background">
+
+            <TextView
+                android:id="@+id/movieGenreIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Genre:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/actorsIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieGenreIdDets"
+                android:padding="5dp"
+                android:text="Actors:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/writersIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actorsIdDets"
+                android:padding="5dp"
+                android:text="Writers:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/plotIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writersIdDets"
+                android:padding="5dp"
+                android:text="Plot:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/boxOfficeIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/plotIdDets"
+                android:padding="5dp"
+                android:text="Box Office:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/awardsIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boxOfficeIdDets"
+                android:padding="5dp"
+                android:text="Awards:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/languageIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/awardsIdDets"
+                android:padding="5dp"
+                android:text="Language:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/countryIdDets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/languageIdDets"
+                android:padding="5dp"
+                android:text="Country:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/countryIdDets"
+                android:text=""
+                android:textSize="4sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
